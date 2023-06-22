@@ -21,6 +21,7 @@ export default defineEventHandler(async (event) => {
       STRIPE_WEBHOOK_SECRET
     )
   } catch (error) {
+    console.log(error)
     throw createError({
       statusCode: 400,
       statusMessage: 'Invalid signature',
