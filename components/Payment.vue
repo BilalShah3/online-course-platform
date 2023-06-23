@@ -53,7 +53,6 @@
 <script setup lang="ts">
 const course = await useCourse()
 const config = useRuntimeConfig()
-console.log(config.public.stripeKey)
 const stripe = ref(null)
 const card = ref(null)
 const email = ref("")

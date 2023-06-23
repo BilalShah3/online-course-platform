@@ -24,7 +24,7 @@ export default defineEventHandler(async (event) => {
     console.log(error)
     throw createError({
       statusCode: 400,
-      statusMessage: 'Invalid signature',
+      statusMessage: `${error}`,
     });
   }
 
